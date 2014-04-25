@@ -1,0 +1,3 @@
+## * deploygate ios sdk
+## -- https://deploygate.com/docs/ios_sdk
+OTHER_LDFLAGS=$(inherited) -framework DeployGateSDK -F"your framework dir here"
