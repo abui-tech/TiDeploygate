@@ -12,3 +12,5 @@ http://www.appcelerator.com/
   `OTHER_LDFLAGS=$(inherited) -framework DeployGateSDK -F"[ここをdeploygate ios sdkがある場所に書き換える]"`
 4. ti.deploygate-iphone-0.1.zipをプロジェクトにインポートする
 5. ユーザー認証を使う場合は プロジェクトの Info.plist に deploygateが指定するurl schemeを追加してください
+
+サンプルコード： <a href="source/example/app.js">source/example/app.js</a>
