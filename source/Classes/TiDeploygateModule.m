@@ -125,4 +125,13 @@
     return [[DeployGateSDK sharedInstance] userAuthorization];
 }
 
+-(void)setAppBootReportDisabled:(id)args
+{
+    ENSURE_UI_THREAD(setAppBootReportDisabled, args);
+    ENSURE_ARG_COUNT(args, 1);
+    
+    Boolean appBootReportDisabled = [TiUtils boolValue:[args objectAtIndex:0]] ? YES : NO;
+    [[DeployGateSDK sharedInstance] setAppBootReportDisabled:appBootReportDisabled];
+}
+
 @end
